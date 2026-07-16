@@ -159,7 +159,7 @@ a:focus-visible {
 
 .hero-title em {
   font-style: normal;
-  color: var(--ai-indigo);
+  color: #fff;
 }
 
 .hero-sub {
