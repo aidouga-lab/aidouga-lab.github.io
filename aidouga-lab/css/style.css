@@ -1,0 +1,305 @@
+/* =========================================================
+   AI動画ラボ — base stylesheet (dark mode)
+   Identidade: 藍 (índigo japonês) / tipografia de sistema JP
+   ========================================================= */
+
+:root {
+  --ai-indigo: #5B9BD5;
+  --ai-indigo-deep: #7BB3E0;
+  --ai-indigo-glow: rgba(91, 155, 213, 0.12);
+  --ai-indigo-mist: rgba(91, 155, 213, 0.08);
+  --ink: #E4E6EA;
+  --ink-soft: #9BA1AB;
+  --paper: #111317;
+  --surface: #1A1D23;
+  --surface-raised: #22262E;
+  --line: #2C313A;
+  --line-subtle: #23272F;
+  --maxw: 960px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+               "Yu Gothic Medium", "Yu Gothic", Meiryo,
+               "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: var(--ai-indigo);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover { color: var(--ai-indigo-deep); }
+
+a:focus-visible {
+  outline: 2px solid var(--ai-indigo);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand-mark {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--ai-indigo);
+  line-height: 1;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.site-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-nav a:hover { color: var(--ink); }
+
+/* ---------- hero ---------- */
+
+.hero {
+  background: linear-gradient(170deg, var(--surface) 0%, var(--paper) 100%);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, var(--ai-indigo-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  position: relative;
+}
+
+.hero-vertical {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  opacity: 0.5;
+}
+
+.hero-title {
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.hero-title em {
+  font-style: normal;
+  color: var(--ai-indigo);
+}
+
+.hero-sub {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink-soft);
+  max-width: 620px;
+  line-height: 1.85;
+}
+
+/* ---------- sections ---------- */
+
+section {
+  padding: 48px 0;
+}
+
+section + section {
+  border-top: 1px solid var(--line);
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  color: var(--ink);
+}
+
+/* ---------- ポリシー (policy) ---------- */
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.policy-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.policy-item:hover {
+  border-color: var(--ai-indigo);
+  background: var(--surface-raised);
+}
+
+.policy-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.policy-item h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ai-indigo);
+}
+
+.policy-item p {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+/* ---------- 公開予定 (upcoming) ---------- */
+
+.upcoming-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.upcoming-list li {
+  padding: 14px 4px;
+  border-bottom: 1px dashed var(--line);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.upcoming-list li:last-child {
+  border-bottom: none;
+}
+
+.upcoming-tag {
+  display: inline-block;
+  background: var(--ai-indigo-mist);
+  color: var(--ai-indigo);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+
+.upcoming-note {
+  margin: 16px 0 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+/* ---------- 運営者 (about) ---------- */
+
+.about p {
+  max-width: 720px;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.9;
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  padding: 32px 0;
+  font-size: 13px;
+}
+
+.footer-disclosure {
+  margin: 0 0 10px;
+  line-height: 1.8;
+}
+
+.footer-copy {
+  margin: 0;
+  color: #555A63;
+}
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 720px) {
+  .policy-grid { grid-template-columns: 1fr; }
+  .hero-inner { padding-top: 44px; padding-bottom: 44px; }
+  .hero-vertical { display: none; }
+  .hero-title { font-size: 22px; }
+  .site-nav { gap: 14px; }
+  .site-nav a { font-size: 13px; }
+}
