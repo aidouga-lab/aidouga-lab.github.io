@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://aidouga-lab.github.io/sitemap.xml
