@@ -73,6 +73,16 @@
   text-decoration: none;
 }
 
+.article-body .btn-primary {
+  color: #fff;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.article-body .btn-primary:hover {
+  color: #fff;
+}
+
 /* tabelas de comparação e preços */
 
 .article-body table {
