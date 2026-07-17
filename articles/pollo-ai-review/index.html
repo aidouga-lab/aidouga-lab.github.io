@@ -264,6 +264,40 @@
         <p>もちろんSeedance 2.0やVeo 3.1のような上位モデルと比べれば品質差はあるはずですが、「無料でこのレベルが出る」という点は、初めてAI動画を試す人にとって十分な価値があります。</p>
 
 
+        <!-- セクション5b: Pixverse V6との比較 -->
+        <h2>同じプロンプトで別モデルに切り替え — Pixverse V6で判明した「落とし穴」</h2>
+
+        <p>Pollo AIの強みは「同じプロンプトで複数モデルを試せる」ことです。そこで、先ほどと同じ新宿のプロンプトをPixverse V6（最低1クレジット〜）でも試してみました。</p>
+
+        <figure>
+          <img src="img/pixverse-v6-prompt.jpg" alt="Pixverse V6を選択して同じ新宿のプロンプトを入力した画面" width="1366" height="768" loading="lazy">
+          <figcaption>同じプロンプトでPixverse V6を選択（画面の動画サムネイルは前回のPollo 2.5の結果であり、Pixverse V6の生成結果ではない）</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/pixverse-v6-anime.jpg" alt="Pixverse V6の生成結果。アニメ調の女性が赤い傘をさして路地裏を歩いている" width="1366" height="768" loading="lazy">
+          <figcaption>Pixverse V6の生成結果。プロンプトは同じなのにアニメ調になった</figcaption>
+        </figure>
+
+        <p>結果は予想外でした。まったく同じプロンプトを使ったにもかかわらず、Pixverse V6はアニメ風の映像を生成しました。プロンプトには「アニメ」という指示は一切含まれていません。どうやらPixverse V6は、日本語のプロンプトを受け取ると自動的にアニメスタイルで描画する傾向があるようです。</p>
+
+        <p>そこでプロンプトの冒頭に「photorealistic」やリアルな実写映像であることを強調する指示を英語で追加し、再生成しました。</p>
+
+        <figure>
+          <img src="img/pixverse-v6-prompt2.jpg" alt="修正したプロンプト。冒頭にphotorealisticや英語でリアルな映像を指示する文言を追加" width="1366" height="768" loading="lazy">
+          <figcaption>修正版プロンプト。冒頭に「photorealistic」「no anime style」などの英語指示を追加した（画面の動画サムネイルは直前のアニメ調の結果）</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/pixverse-v6-realistic.jpg" alt="修正プロンプトによるPixverse V6の生成結果。実写風の若い女性が赤い傘をさして路地裏を歩いている" width="1366" height="768" loading="lazy">
+          <figcaption>修正後の結果。英語で「photorealistic」「no anime style」を明示したことでリアルな映像に近づいた</figcaption>
+        </figure>
+
+        <p>英語の指示を加えたことで、今度はリアルな実写風の映像が生成されました。ただし、Pollo 2.5が日本語プロンプトだけでフォトリアルな映像を返したのとは対照的です。</p>
+
+        <p>この比較から分かる重要なポイントがあります。Pollo AIは複数のモデルを同じ画面で使えますが、各モデルのクセや得意分野は大きく異なります。同じプロンプトでも、あるモデルはリアルな映像を返し、別のモデルはアニメ調になる。モデルごとにプロンプトの調整が必要になる場合があるということです。これはPollo AIの欠点ではなく、各AIモデルの特性ですが、ユーザーとしては知っておくべき点です。</p>
+
+
         <!-- セクション6: 良い点 -->
         <h2>Pollo AIの良い点</h2>
 
