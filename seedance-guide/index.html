@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N07L9W3FB1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N07L9W3FB1');
+  </script>
+
+  <title>Seedance 2.0 使い方ガイド｜料金・プロンプトのコツ・Pollo AIでの始め方【2026年最新】</title>
+  <meta name="description" content="Seedance 2.0の使い方を初心者向けに解説。Pollo AIを使えばアカウント1つで他モデルと比較しながら利用可能。料金（クレジット消費の実態）、プロンプトのコツ、モデルの選び方まで。">
+  <link rel="canonical" href="https://aidouga-lab.github.io/seedance-guide/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AI動画ラボ">
+  <meta property="og:title" content="Seedance 2.0 使い方ガイド｜料金・プロンプトのコツ・始め方">
+  <meta property="og:description" content="Seedance 2.0の使い方を初心者向けに完全解説。料金の落とし穴、プロンプトのコツ、Pollo AIでの始め方まで。">
+  <meta property="og:url" content="https://aidouga-lab.github.io/seedance-guide/">
+  <meta property="og:locale" content="ja_JP">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#111317">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/article.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">藍</span>
+        <span class="brand-name">AI動画ラボ</span>
+      </a>
+      <nav class="site-nav">
+        <a href="/">ホーム</a>
+        <a href="/#upcoming">記事一覧</a>
+        <a href="/#about">運営者</a>
+      </nav>
+    </div>
+  </header>
+
+  <article>
+    <div class="wrap">
+
+      <div class="article-header">
+        <span class="pr-badge">PR</span>
+        <h1 class="hero-title">Seedance 2.0 使い方ガイド｜料金・プロンプトのコツ・Pollo AIでの始め方</h1>
+        <p class="article-meta">公開日：2026年7月17日　｜　最終更新：2026年7月17日</p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>Seedance 2.0とは？ — 今もっとも注目されているAI動画生成モデル</h2>
+
+        <p>Seedance 2.0は、ByteDanceが開発したAI動画生成モデルです。2026年に入ってから検索数が急上昇しており（前年比+900%）、AI動画生成の分野で最も注目度の高いモデルの一つになっています。</p>
+
+        <p>Seedanceの最大の特徴は「参照駆動型」の生成方式です。テキストプロンプトに加えて、参照画像（@Image）、参照動画（@Video）、音声（@Audio）を同時に指定でき、キャラクターの外見・動き・背景・音声までを一貫してコントロールできます。複数のシーンをまたいでもキャラクターの一貫性が保たれるため、ストーリー性のある連続した映像を作りやすいのが強みです。</p>
+
+        <p>ただし、Seedance 2.0には公式サイトがありません。利用するにはSeedance 2.0と連携しているプラットフォームを経由する必要があります。Jimeng AI（中国向け）、Dreamina、各種サードパーティサービスなどがありますが、この記事ではPollo AIを使った方法を紹介します。</p>
+
+        <div class="cta-box">
+          <p>Pollo AIならSeedanceを含む50以上のモデルを1アカウントで利用可能</p>
+          <a href="https://pollo.ai/ja?ref=nmmxnzi&tap_s=10073835-f5ab72" class="btn-primary" rel="sponsored" target="_blank">Pollo AIを無料で始める</a>
+        </div>
+
+
+        <h2>なぜPollo AI経由がおすすめなのか</h2>
+
+        <p>Seedance 2.0を使う方法はいくつかありますが、Pollo AI経由を推奨する理由は明確です。</p>
+
+        <p>1つのアカウントで複数モデルを比較できる。Seedance 2.0で生成した結果に満足できなければ、同じ画面でVeo 3.1やKling 3.0に切り替えて同じプロンプトで再生成できます。モデルごとに別のサービスを契約する必要がありません。</p>
+
+        <p>日本語インターフェースに完全対応。設定画面、モデル説明、操作メニューがすべて日本語で表示されます。</p>
+
+        <p>無料で始められる。アカウント登録だけで初回クレジットが付与され、Seedanceの下位モデル（Seedance 1.0 Pro Fast: 1クレジット〜）なら無料枠でも試せます。</p>
+
+
+        <h2>Pollo AIでSeedance 2.0を使う手順</h2>
+
+        <h3>ステップ1：アカウント作成</h3>
+
+        <p>Pollo AIの公式サイトにアクセスし、無料アカウントを作成します。Googleアカウントでのログインにも対応しており、クレジットカードの登録は不要です。</p>
+
+        <h3>ステップ2：Creative Studioを開く</h3>
+
+        <figure>
+          <img src="img/pollo-ai-creative-studio.jpg" alt="Pollo AIのCreative Studio画面" width="1366" height="768" loading="lazy">
+          <figcaption>Creative Studio。ここがメインの動画生成画面</figcaption>
+        </figure>
+
+        <p>ログイン後、左メニューから「Creative Studio」を選択します。画面下部にプロンプト入力エリアがあり、その右にモデル選択ボタンがあります。</p>
+
+        <h3>ステップ3：Seedanceモデルを選択</h3>
+
+        <figure>
+          <img src="img/seedance-models.jpg" alt="Pollo AIのモデル選択画面でSeedanceファミリーが展開されている。Seedance 2.0、2.0 Mini、2.0 Fast、1.5 Pro、1.0 Pro、1.0 Pro Fastの6バリエーション" width="1366" height="768" loading="lazy">
+          <figcaption>Seedanceファミリーのモデル一覧。6つのバリエーションから選べる</figcaption>
+        </figure>
+
+        <p>モデル選択ボタンをクリックし、「Seedance」を選択すると、以下の6バリエーションが表示されます。</p>
+
+        <table>
+          <thead><tr><th>モデル</th><th>最低クレジット</th><th>最大秒数</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr><td>Seedance 2.0</td><td>40+</td><td>265秒</td><td>最高品質・フルスペック</td></tr>
+            <tr><td>Seedance 2.0 Mini</td><td>20+</td><td>220秒</td><td>2.0の軽量版・コスパ良</td></tr>
+            <tr><td>Seedance 2.0 Fast</td><td>24+</td><td>200秒</td><td>高速生成</td></tr>
+            <tr><td>Seedance 1.5 Pro</td><td>8+</td><td>100秒</td><td>中価格帯の安定モデル</td></tr>
+            <tr><td>Seedance 1.0 Pro</td><td>15+</td><td>70秒</td><td>旧世代・標準</td></tr>
+            <tr><td>Seedance 1.0 Pro Fast</td><td>1+</td><td>55秒</td><td>最安・テスト用に最適</td></tr>
+          </tbody>
+        </table>
+
+        <p>初めてSeedanceを試すなら、まず Seedance 1.0 Pro Fast（1クレジット〜）でプロンプトの感触を確認し、気に入ったら Seedance 2.0 Mini（20クレジット〜）にステップアップするのが効率的です。</p>
+
+        <div class="cta-box">
+          <p>Seedance 1.0 Pro Fastは1クレジットから試せます</p>
+          <a href="https://pollo.ai/ja?ref=nmmxnzi&tap_s=10073835-f5ab72" class="btn-primary" rel="sponsored" target="_blank">無料でSeedanceを試す</a>
+        </div>
+
+        <h3>ステップ4：設定を調整する</h3>
+
+        <p>モデルを選択したら、以下の設定を調整します。</p>
+
+        <table>
+          <thead><tr><th>設定項目</th><th>選択肢</th><th>おすすめ</th></tr></thead>
+          <tbody>
+            <tr><td>入力モード</td><td>テキスト→動画 / 画像→動画</td><td>初心者はテキスト→動画から</td></tr>
+            <tr><td>解像度</td><td>480p / 720p / 1080p</td><td>テスト時は480p（最安）</td></tr>
+            <tr><td>動画の長さ</td><td>4秒〜15秒（モデルによる）</td><td>テスト時は最短</td></tr>
+            <tr><td>アスペクト比</td><td>16:9 / 9:16 / 1:1</td><td>YouTube: 16:9 / TikTok: 9:16</td></tr>
+            <tr><td>オーディオ</td><td>オン / オフ</td><td>テスト時はオフ（コスト注意）</td></tr>
+          </tbody>
+        </table>
+
+        <h3>ステップ5：プロンプトを入力して生成</h3>
+
+        <p>設定が終わったら、プロンプトを入力して「生成」ボタンを押します。生成にかかる時間はモデルと設定によりますが、通常1〜3分程度です。</p>
+
+
+        <h2>クレジット消費の実態 — 「20+」の本当の意味</h2>
+
+        <p>Seedance 2.0を使う上で最も重要な注意点がクレジット消費です。モデル選択画面に表示される「20+ クレジット」「40+ クレジット」は最低構成（最低解像度・最短秒数）の数値であり、設定によって大幅に増加します。</p>
+
+        <p>実際にSeedance 2.0 Miniで確認した例をお見せします。</p>
+
+        <table>
+          <thead><tr><th>設定</th><th>消費クレジット</th><th>倍率</th></tr></thead>
+          <tbody>
+            <tr><td>4秒 / 480p（最安構成）</td><td>20</td><td>1.0x</td></tr>
+            <tr><td>15秒 / 720p（最高構成）</td><td>150</td><td>7.5x</td></tr>
+          </tbody>
+        </table>
+
+        <p>最安構成と最高構成で7.5倍の差があります。なお、Seedance 2.0 Miniではオーディオの有無によるクレジット消費の違いはありませんでした。</p>
+
+        <p>この料金構造を踏まえたコスト感の目安です。</p>
+
+        <table>
+          <thead><tr><th>プラン</th><th>月間クレジット</th><th>Seedance 2.0 Mini 最安構成</th><th>Seedance 2.0 Mini 最高構成</th></tr></thead>
+          <tbody>
+            <tr><td>ライト（$10〜/月）</td><td>300</td><td>最大15本</td><td>最大2本</td></tr>
+            <tr><td>プロ（$14.50〜/月）</td><td>800</td><td>最大40本</td><td>最大5本</td></tr>
+            <tr><td>ウルトラ（$109〜/月）</td><td>5,000</td><td>最大250本</td><td>最大33本</td></tr>
+          </tbody>
+        </table>
+
+        <p>Seedance 2.0（フルスペック版）はさらに高く、最低40クレジットからです。高品質な設定で使うと1本あたり200クレジット以上になる可能性もあります。コストを意識するなら、まず低解像度・短秒数でプロンプトを試し、気に入った結果だけを高設定で再生成する2段階ワークフローが実用的です。</p>
+
+        <div class="cta-box">
+          <p>Pollo AIの料金プランを詳しく確認する</p>
+          <a href="https://pollo.ai/ja/pricing?ref=nmmxnzi&tap_s=10073835-f5ab72" class="btn-primary" rel="sponsored" target="_blank">料金プランを見る</a>
+        </div>
+
+
+        <h2>Seedance 2.0のプロンプトのコツ</h2>
+
+        <p>Seedanceで良い結果を得るためのプロンプトのポイントをまとめます。</p>
+
+        <h3>具体的な映像描写を書く</h3>
+
+        <p>「かっこいい動画を作って」のような抽象的な指示ではなく、実際の映像として何が映るかを具体的に書きます。場所、時間帯、被写体、被写体の動作、カメラワーク、雰囲気を含めると精度が上がります。</p>
+
+        <p>悪い例：「東京の綺麗な動画」</p>
+
+        <p>良い例：「東京の夜、雨に濡れた新宿の路地裏を一人の若い女性が赤い傘をさして歩いている。ネオンの光が水たまりに反射してカラフルに輝き、背景には蒸気が立ち上る屋台が見える。カメラはゆっくりとドリーバックしながら彼女を追う。シネマティックな雰囲気、浅い被写界深度。」</p>
+
+        <h3>カメラワークを指定する</h3>
+
+        <p>AI動画生成では、カメラの動きを指定すると映像のクオリティが大きく変わります。Seedance 2.0は以下のカメラワーク指示に対応しています。</p>
+
+        <table>
+          <thead><tr><th>日本語</th><th>英語</th><th>動き</th></tr></thead>
+          <tbody>
+            <tr><td>ドリーイン</td><td>dolly in</td><td>カメラが被写体に近づく</td></tr>
+            <tr><td>ドリーバック</td><td>dolly back</td><td>カメラが被写体から離れる</td></tr>
+            <tr><td>パン</td><td>pan left / pan right</td><td>カメラが左右に回転</td></tr>
+            <tr><td>チルト</td><td>tilt up / tilt down</td><td>カメラが上下に傾く</td></tr>
+            <tr><td>トラッキングショット</td><td>tracking shot</td><td>被写体を追いかける</td></tr>
+            <tr><td>空撮</td><td>aerial shot / drone shot</td><td>上空からの撮影</td></tr>
+            <tr><td>固定ショット</td><td>static shot</td><td>カメラ固定</td></tr>
+          </tbody>
+        </table>
+
+        <h3>日本語プロンプトは基本的に使える</h3>
+
+        <p>Seedance 2.0は日本語プロンプトに対応しています。当サイトのテストでは、日本語のみのプロンプトでもフォトリアルな映像が生成されました。ただし、一部のモデル（たとえばPixverse V6など）では日本語プロンプトがアニメ調に解釈される場合があるため、モデルによっては「photorealistic」「cinematic atmosphere」などの英語キーワードを冒頭に追加すると安定します。</p>
+
+        <p>詳しくは<a href="/pollo-ai-review/">Pollo AIレビュー記事</a>のモデル比較セクションで実例を掲載しています。</p>
+
+
+        <h2>Seedance 2.0の強みと弱み</h2>
+
+        <h3>強み</h3>
+
+        <p>キャラクターの一貫性が高い。複数シーンにまたがる映像でも、キャラクターの外見が崩れにくいのはSeedanceの最大の武器です。ストーリー性のあるショート動画を作りたいクリエイターにとって、これは非常に重要な特性です。</p>
+
+        <p>マルチモーダル入力。テキスト・画像・動画・音声を同時に参照できるため、意図した映像に近い結果を得やすいです。</p>
+
+        <p>自然な物理演算。布の揺れ、水の流れ、光の反射など、物理的に自然な描写が得意です。</p>
+
+        <h3>弱み</h3>
+
+        <p>コストが高い。Seedance 2.0の最低クレジットは40で、実用的な設定では100クレジット以上になることも珍しくありません。気軽に何度も生成するという使い方には向きません。</p>
+
+        <p>公式サイトがない。ByteDanceが開発していますが、直接アクセスできる公式プラットフォームがなく、サードパーティ経由でしか利用できません。</p>
+
+        <p>プロンプトの習得に時間がかかる。Seedance 2.0のポテンシャルを引き出すには、@メンション構造（@Image、@Videoなど）を含む独自の構文を覚える必要があります。シンプルなテキストプロンプトだけでも使えますが、上級機能を使いこなすには学習コストがかかります。</p>
+
+        <div class="cta-box">
+          <p>まずはシンプルなテキストプロンプトからSeedanceを体験</p>
+          <a href="https://pollo.ai/ja?ref=nmmxnzi&tap_s=10073835-f5ab72" class="btn-primary" rel="sponsored" target="_blank">Pollo AIで無料で試す</a>
+        </div>
+
+
+        <h2>Seedanceモデルの選び方 — どのバリエーションを使うべきか</h2>
+
+        <p>6つのバリエーションがあると迷いますが、用途別の選び方はシンプルです。</p>
+
+        <p>初めて試す・プロンプトをテストしたい → Seedance 1.0 Pro Fast（1クレジット〜）。品質は最低ですが、プロンプトの方向性を確認するには十分です。</p>
+
+        <p>SNS用のショート動画を量産したい → Seedance 2.0 Mini（20クレジット〜）。品質とコストのバランスが最も良いモデルです。</p>
+
+        <p>最高品質の映像が必要 → Seedance 2.0（40クレジット〜）。プロモーション動画やポートフォリオ用途に。ただしコストが高いため、プロンプトは2.0 Miniで事前検証してから本番生成するのが効率的です。</p>
+
+        <p>生成速度を優先 → Seedance 2.0 Fast（24クレジット〜）。品質は2.0に近く、生成時間が短いモデルです。</p>
+
+
+        <h2>他のプラットフォームとの比較</h2>
+
+        <p>Seedance 2.0はPollo AI以外にも、Jimeng AI、Dreamina、Yapper、SJinn、Videoweb AIなどでも利用できます。各プラットフォームでクレジット単価や利用条件が異なるため、一概にどれが最安とは言えません。</p>
+
+        <p>Pollo AIの最大のメリットは「Seedance以外のモデルも同じアカウントで使える」ことです。Seedanceの結果に満足できない場面でVeo 3.1やKling 3.0にすぐ切り替えられる柔軟性は、Seedance専用プラットフォームにはない強みです。逆に、Seedanceだけを大量に使う場合は、クレジット単価が安い専用プラットフォームの方がコスパが良い可能性があります。</p>
+
+
+        <h2>まとめ</h2>
+
+        <p>Seedance 2.0は、キャラクターの一貫性と映像品質の面で現在トップクラスのAI動画生成モデルです。特にストーリー性のある連続シーンを作りたいクリエイターにとっては、最有力の選択肢と言えます。</p>
+
+        <p>一方で、コストの高さとプロンプト習得の難しさは無視できません。まずは低コストのSeedance 1.0 Pro Fast（1クレジット〜）で感触を掴み、段階的にステップアップしていくのが最も効率的なアプローチです。</p>
+
+        <p>Pollo AIを使えば、Seedanceに加えてVeo・Sora・Kling・Hailuoなど50以上のモデルを1つのアカウントで横断的に比較できます。「どのモデルが自分の用途に合うか」を見極めるための入口として、最適なプラットフォームです。</p>
+
+        <div class="cta-box">
+          <p>無料アカウントで初回クレジット付与（カード登録不要）</p>
+          <a href="https://pollo.ai/ja?ref=nmmxnzi&tap_s=10073835-f5ab72" class="btn-primary" rel="sponsored" target="_blank">Pollo AIでSeedance 2.0を試す</a>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-disclosure">当サイトは、紹介するサービスのアフィリエイトプログラムに参加しています。記事内にPRリンクを含む場合は、各記事の冒頭に明記します。</p>
+      <p class="footer-copy">© 2026 AI動画ラボ</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Seedance 2.0 使い方ガイド｜料金・プロンプトのコツ・Pollo AIでの始め方",
+    "description": "Seedance 2.0の使い方を初心者向けに解説。Pollo AIを使えばアカウント1つで他モデルと比較しながら利用可能。料金、プロンプトのコツ、モデルの選び方まで。",
+    "author": {"@type": "Organization", "name": "AI動画ラボ", "url": "https://aidouga-lab.github.io/"},
+    "publisher": {"@type": "Organization", "name": "AI動画ラボ", "url": "https://aidouga-lab.github.io/"},
+    "mainEntityOfPage": "https://aidouga-lab.github.io/seedance-guide/",
+    "inLanguage": "ja",
+    "datePublished": "2026-07-17",
+    "dateModified": "2026-07-17"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Seedance 2.0は無料で使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seedance 2.0自体は有料（最低40クレジット〜）ですが、Pollo AIでは下位モデルのSeedance 1.0 Pro Fast（1クレジット〜）が利用可能です。無料アカウントの初回クレジットで試すことができます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Seedance 2.0の公式サイトはどこですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seedance 2.0にはByteDanceの公式サイトがありません。Pollo AI、Jimeng AI、Dreamina、Yapperなどのサードパーティプラットフォームを通じて利用します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Seedance 2.0は日本語プロンプトに対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。日本語のプロンプトでフォトリアルな映像を生成できることを確認しています。ただし、より安定した結果を得るために英語のキーワード（photorealistic、cinematic等）を補足的に加えることも有効です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Seedance 2.0とSeedance 2.0 Miniの違いは？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seedance 2.0は最高品質のフルスペック版（最低40クレジット〜）、Seedance 2.0 Miniはその軽量版（最低20クレジット〜）です。品質はやや落ちますが、コストは半分で済むため、日常的な使用にはMiniがおすすめです。"
+        }
+      }
+    ]
+  }
+  </script>
+
+</body>
+</html>
