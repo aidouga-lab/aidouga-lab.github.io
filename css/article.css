@@ -1,0 +1,178 @@
+/* =========================================================
+   AI動画ラボ — article stylesheet (dark mode)
+   ========================================================= */
+
+.pr-badge {
+  display: inline-block;
+  background: rgba(91, 155, 213, 0.15);
+  color: var(--ai-indigo);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.article-header {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 12px 0 0;
+}
+
+.article-body {
+  padding: 40px 0 60px;
+}
+
+.article-body h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.article-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 32px 0 14px;
+  color: var(--ink);
+}
+
+.article-body p {
+  margin: 0 0 18px;
+  color: var(--ink);
+  line-height: 1.9;
+}
+
+.article-body a {
+  color: var(--ai-indigo);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article-body a:hover {
+  color: var(--ai-indigo-deep);
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  margin: 20px 0;
+}
+
+.article-body .btn {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* tabelas de comparação e preços */
+
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14.5px;
+}
+
+.article-body th {
+  background: var(--surface-raised);
+  color: var(--ai-indigo);
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--line);
+}
+
+.article-body td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.article-body tr:hover td {
+  background: var(--ai-indigo-mist);
+}
+
+/* CTA button */
+
+.cta-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+  text-align: center;
+  margin: 36px 0;
+}
+
+.cta-box p {
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--ai-indigo);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--ai-indigo-deep);
+  color: #fff;
+}
+
+/* screenshots com legenda */
+
+figure {
+  margin: 24px 0;
+}
+
+figure img {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* avaliação/rating */
+
+.rating-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 28px 0;
+}
+
+.rating-box dt {
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.rating-box dd {
+  margin: 0 0 16px 0;
+  color: var(--ink-soft);
+}
+
+.rating-box dd:last-child {
+  margin-bottom: 0;
+}
